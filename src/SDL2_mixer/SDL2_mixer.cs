@@ -50,7 +50,7 @@ namespace TS.SDL2
 		 */
 		public const int SDL_MIXER_MAJOR_VERSION =	2;
 		public const int SDL_MIXER_MINOR_VERSION =	0;
-		public const int SDL_MIXER_PATCHLEVEL =		0;
+		public const int SDL_MIXER_PATCHLEVEL =		1;
 
 		/* In C, you can redefine this value before including SDL_mixer.h.
 		 * We're not going to allow this in SDL2#, since the value of this

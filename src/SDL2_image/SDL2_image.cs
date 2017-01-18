@@ -50,7 +50,7 @@ namespace TS.SDL2
 		 */
 		public const int SDL_IMAGE_MAJOR_VERSION =	2;
 		public const int SDL_IMAGE_MINOR_VERSION =	0;
-		public const int SDL_IMAGE_PATCHLEVEL =		0;
+		public const int SDL_IMAGE_PATCHLEVEL =		1;
 
 		[Flags]
 		public enum IMG_InitFlags

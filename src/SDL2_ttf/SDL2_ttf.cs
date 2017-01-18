@@ -50,7 +50,7 @@ namespace TS.SDL2
 		 */
 		public const int SDL_TTF_MAJOR_VERSION =	2;
 		public const int SDL_TTF_MINOR_VERSION =	0;
-		public const int SDL_TTF_PATCHLEVEL =		12;
+		public const int SDL_TTF_PATCHLEVEL =		14;
 
 		public const int UNICODE_BOM_NATIVE =	0xFEFF;
 		public const int UNICODE_BOM_SWAPPED =	0xFFFE;

@@ -110,6 +110,7 @@
     <Compile Include="src\SDL2\SDL_video.cs" />
     <Compile Include="src\SDL2_image\SDL2_image.cs" />
     <Compile Include="src\SDL2_mixer\SDL2_mixer.cs" />
+    <Compile Include="src\SDL2_net\SDL2_net.cs" />
     <Compile Include="src\SDL2_ttf\SDL2_ttf.cs" />
     <Compile Include="src\LPUtf8StrMarshaler.cs" />
   </ItemGroup>
@@ -120,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />
+    <Folder Include="src\SDL2_net" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>
