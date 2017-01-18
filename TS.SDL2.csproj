@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -76,7 +76,38 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="src\SDL2\SDL2.cs" />
+    <Compile Include="src\SDL2\SDL.cs" />
+    <Compile Include="src\SDL2\SDL_audio.cs" />
+    <Compile Include="src\SDL2\SDL_clipboard.cs" />
+    <Compile Include="src\SDL2\SDL_cpuinfo.cs" />
+    <Compile Include="src\SDL2\SDL_error.cs" />
+    <Compile Include="src\SDL2\SDL_events.cs" />
+    <Compile Include="src\SDL2\SDL_filesystem.cs" />
+    <Compile Include="src\SDL2\SDL_gamecontroller.cs" />
+    <Compile Include="src\SDL2\SDL_haptic.cs" />
+    <Compile Include="src\SDL2\SDL_hints.cs" />
+    <Compile Include="src\SDL2\SDL_joystick.cs" />
+    <Compile Include="src\SDL2\SDL_keyboard.cs" />
+    <Compile Include="src\SDL2\SDL_keycode.cs" />
+    <Compile Include="src\SDL2\SDL_log.cs" />
+    <Compile Include="src\SDL2\SDL_main.cs" />
+    <Compile Include="src\SDL2\SDL_messagebox.cs" />
+    <Compile Include="src\SDL2\SDL_mouse.cs" />
+    <Compile Include="src\SDL2\SDL_pixels.cs" />
+    <Compile Include="src\SDL2\SDL_platform.cs" />
+    <Compile Include="src\SDL2\SDL_power.cs" />
+    <Compile Include="src\SDL2\SDL_rect.cs" />
+    <Compile Include="src\SDL2\SDL_render.cs" />
+    <Compile Include="src\SDL2\SDL_revision.cs" />
+    <Compile Include="src\SDL2\SDL_rwops.cs" />
+    <Compile Include="src\SDL2\SDL_scancode.cs" />
+    <Compile Include="src\SDL2\SDL_stdinc.cs" />
+    <Compile Include="src\SDL2\SDL_surface.cs" />
+    <Compile Include="src\SDL2\SDL_syswm.cs" />
+    <Compile Include="src\SDL2\SDL_timer.cs" />
+    <Compile Include="src\SDL2\SDL_touch.cs" />
+    <Compile Include="src\SDL2\SDL_version.cs" />
+    <Compile Include="src\SDL2\SDL_video.cs" />
     <Compile Include="src\SDL2_image\SDL2_image.cs" />
     <Compile Include="src\SDL2_mixer\SDL2_mixer.cs" />
     <Compile Include="src\SDL2_ttf\SDL2_ttf.cs" />
