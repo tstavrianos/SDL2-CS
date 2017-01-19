@@ -76,6 +76,7 @@ namespace TS.SDL2.SDL2_net
         [DllImport(nativeLibName, CallingConvention = CallingConvention.Cdecl)]
         public static extern void SDLNet_Quit();
 
+        [StructLayout(LayoutKind.Sequential)]
         public struct IPaddress
         {
             public uint host;
@@ -135,6 +136,7 @@ namespace TS.SDL2.SDL2_net
         
         public const int SDLNET_MAX_UDPADDRESSES = 4;
         
+        [StructLayout(LayoutKind.Sequential)]
         public struct UDPpacket
         {
             public int channel;
