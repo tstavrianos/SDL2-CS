@@ -264,6 +264,12 @@ namespace TS.SDL2
             out SDL_AudioSpec obtained
         );
 
+        [DllImport(nativeLibName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern int SDL_OpenAudio(
+            ref SDL_AudioSpec desired,
+            IntPtr obtained
+        );
+
         /* uint refers to an SDL_AudioDeviceID */
         [DllImport(nativeLibName, CallingConvention = CallingConvention.Cdecl)]
         public static extern uint SDL_OpenAudioDevice(
