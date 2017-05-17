@@ -27,12 +27,28 @@
 #endregion
 
 using System;
+using System.IO;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 namespace TS.SDL2
 {
     public static partial class SDL
     {
+        [DllImport("kernel32.dll")]
+        private static extern IntPtr LoadLibrary(string dllToLoad);
+
+        static SDL()
+        {
+            var myPath = new Uri(Assembly.GetEntryAssembly().CodeBase).LocalPath;
+            var myFolder = Path.GetDirectoryName(myPath);
+
+            var is64 = IntPtr.Size == 8;
+            var subfolder = is64 ? "\\x64\\" : "\\x86\\";
+
+            LoadLibrary(myFolder + subfolder + nativeLibName);
+        }
+
         #region SDL2# Variables
 
         /// <summary>
